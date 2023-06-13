@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+"
+    />
+  </head>
+  <body data-bs-theme="dark">
+    <nav class="navbar bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-center w-100"
+          >Get Country Information</span
+        >
+      </div>
+    </nav>
+
+    <div class="container my-3">
+      <div class="card p-3">
+        <div>
+          <form>
+            <div class="mb-3">
+              <!-- <div class="input-group has-validation"> -->
+              <label for="cn" class="form-label">Enter Country Name:</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="cn"
+                placeholder="Pakistan"
+                name="cn"
+              />
+              <!-- <div class="alert alert-danger mt-2" id="error-msg"></div> -->
+              <!-- </div> -->
+              <input type="submit" class="btn btn-primary mt-2" id="submit" />
+            </div>
+          </form>
+          <hr />
+          <button class="btn btn-primary" id="getAll">Get All Country</button>
+        </div>
+      </div>
+      <div
+        class="alert alert-danger mt-3"
+        role="alert"
+        id="error-display"
+      ></div>
+
+      <div
+        class="d-flex justify-content-center align-items-center w-100 h-100 mt-5"
+      >
+        <div class="spinner-border text-primary" role="status" id="loader">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <div id="detail-div"></div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+"></script>
+    <script src="./api.js"></script>
+  </body>
+</html>
